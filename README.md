@@ -79,3 +79,49 @@ Press **1** in-game to trigger a polished custom headshake animation.
 The animation blends smoothly into your existing movement system, allowing expressive character gestures without disrupting locomotion.
 
 ---
+
+# 🌐 Project 3 – Level Switching with Open Level by Name (UE5)
+
+This project demonstrates a **clean, Blueprint-only level switching system** using Unreal Engine 5.
+You’ll set up simple overlap triggers that instantly move the player between the **Third Person** and **First Person** template maps using the `Open Level (by Name)` node.
+
+It’s a fast, practical setup ideal for prototyping, testing multiple maps, or building hub-based transitions.
+
+---
+
+## 🖼️ Preview
+
+![Level Switch Demo](Media/3.gif)
+
+---
+
+## 🧱 Features
+
+- **BP_ToFirstPerson trigger actor**
+  - Plane mesh for visibility
+  - Box Collision for overlap detection
+  - Opens the FirstPersonMap on overlap
+- **First Person content pack** added directly into the project
+- **Open Level (by Name)** used for clean, direct level transitions
+- **Exact level name copying** to avoid load failures
+- **BP_ToThirdPerson return trigger**
+  - Duplicate of the original trigger
+  - Sends player back to ThirdPersonMap
+- **Two-way map cycling** with zero UI, delays, or GameMode edits
+
+---
+
+## 🚀 Result
+
+Walk onto the first trigger to instantly jump from the **Third Person map** to the **First Person map**.
+Walk onto the second trigger to return back.
+
+The transition is immediate, seamless, and fully Blueprint-driven — perfect for:
+
+- Multi-level progression
+- Prototyping gameplay spaces
+- Quick iteration between test maps
+- Portals and teleporter pads
+- Switching between different game modes (1P ↔ 3P)
+
+---
