@@ -236,3 +236,57 @@ Stamina drains dynamically, the character becomes exhausted when empty, breathin
 The UI bar tracks everything in real time — a clean, immersive Skyrim-inspired stamina loop.
 
 ---
+
+# ✨ Project 5 – Mesh Outline Highlight System (UE5)
+
+This project builds a flexible **mesh outline system** inside Unreal Engine 5.5.4 using unlit masked materials, world-position offset, and Blueprint-driven proximity triggers. It highlights objects when the player approaches, making it ideal for interactables, pickups, and environmental cues.
+
+---
+
+## 🖼️ Preview
+
+![Outline Demo](Media/5.gif)
+
+---
+
+## 🧱 Features
+
+- **M_Outline Material**
+
+  - **Blend Mode: Masked** for sharp silhouette edges
+  - **Shading Model: Unlit** for consistent color regardless of lighting
+  - **Two Sided** enabled for full mesh coverage
+  - **EditableColor (Vector Parameter)** connected to Emissive Color
+  - **TwoSidedSign → OneMinus** used for the opacity mask
+  - **VertexNormalWS × Thickness (Scalar Parameter)** to push the outline outward
+
+- **Material Instances**
+
+  - Instances created for unique styles
+  - Example: **M_Thick_Yellow** for stronger, more visible outlines
+  - Thickness and color exposed through parameters
+  - Can be applied per-object for custom styles
+
+- **Overlay Material Application**
+
+  - Assigned via the **Overlay Material** slot in the Details panel
+  - Works on static meshes, props, and interactables
+  - Clean overlay effect without modifying the base material
+
+- **BP_Outlined_Manny Blueprint**
+
+  - Blueprint Actor containing a Static Mesh (Manny)
+  - Added **Sphere Collision** for proximity detection
+  - **OnComponentBeginOverlap** → sets overlay to outline material
+  - **OnComponentEndOverlap** → clears overlay (None)
+  - Enables context-sensitive highlighting for interactables
+
+---
+
+## 🚀 Result
+
+Walk into the collision area and the outline appears.
+Step away and it disappears.
+A clean, flexible highlight system perfect for pickups, interactables, and environmental cues.
+
+---
