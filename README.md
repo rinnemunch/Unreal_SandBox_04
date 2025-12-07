@@ -1,3 +1,20 @@
+# 🧩 Unreal Engine Blueprint Showcase — Volume 4
+
+A curated collection of **Unreal Engine 5.5.4** mini-projects — each one a focused, standalone system demonstrating clean, production-ready Blueprint design.
+This sandbox contains **Projects 1–6**, wrapped together as a complete learning pack.
+Each system is lightweight, modular, and built to scale into full gameplay features.
+
+---
+
+## 🎞️ Project Gallery
+
+![Project Showcase](Media/7.gif)
+
+Explore the projects below 👇
+Each entry includes a **Blueprint workflow**, **GIF preview**, and **feature breakdown** — perfect for learning, prototyping, or integrating directly into your own UE projects.
+
+---
+
 # 🗡️ Project 1 – Melee + Break Stuff Mini Demo (UE5)
 
 This project showcases a lightweight melee test setup in Unreal Engine 5.5.4, focused on clean animation blending, upper-body attack layering, and simple breakable props. It’s a fast, practical sandbox to experiment with melee hits, weapon collision, and real-time destruction — without building a full combat system.
