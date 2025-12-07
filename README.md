@@ -290,3 +290,61 @@ Step away and it disappears.
 A clean, flexible highlight system perfect for pickups, interactables, and environmental cues.
 
 ---
+
+# Project 6 — Floating Balloon System
+
+## 🖼️ Preview
+
+![Balloon](Media/6.gif)
+
+## 🧱 Features
+
+### Balloon Blueprint (BP_Balloon)
+
+- **Static Mesh Setup**
+
+  - Sphere mesh assigned from Starter Content
+  - Non-uniform scale applied
+    - **X:** 0.6
+    - **Y:** 0.6
+    - **Z:** 0.9
+  - Simulate Physics enabled
+  - Gravity disabled for floaty behavior
+
+- **Balloon String**
+
+  - Cable Component added and renamed **Balloon String**
+  - Width reduced to **2.0** for thin string appearance
+  - **Attach End** disabled for natural cable sway
+  - Custom black material (**M_Black**) created and assigned
+    - Constant3Vector converted to parameter (Edit Color)
+
+- **Physics Constraint**
+
+  - Constraint added to DefaultSceneRoot
+  - Component Name 1 set to **Balloon**
+  - **Linear Limits**
+    - X Motion: Free
+    - Y Motion: Free
+    - Z Motion: Limited
+    - Limit set to **200**
+  - Provides realistic tether behavior and upward float boundary
+
+- **Upward Force Logic**
+  - Add Force at Location applied every Tick
+  - Force values:
+    - **X:** 0
+    - **Y:** 0
+    - **Z:** 22000
+  - Uses world location for responsive physical interaction
+
+### Material Instances for Balloon Colors
+
+- Material Instances created from **M_Black**
+- **Edit Color** parameter enabled and customized
+- Three variants created (e.g., Red, Blue, Yellow)
+- Instances applied to placed BP_Balloon actors for visual variety
+
+## 🚀 Result
+
+Multiple color-variant balloons float naturally, sway gently, and react to player movement with soft, realistic physics behavior — all while staying tethered by a dynamic, physics-driven string.
