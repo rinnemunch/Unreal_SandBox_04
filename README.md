@@ -16,6 +16,7 @@ Each entry includes a **Blueprint workflow**, **GIF preview**, and **feature bre
 ---
 
 # 🗡️ Project 1 – Melee + Break Stuff Mini Demo (UE5)
+**[Medium Guide](https://medium.com/@fulton_shaun/melee-break-stuff-in-ue5-lets-build-a-fun-mini-demo-f1aa2472a814)** • **[YouTube Tutorial](https://www.youtube.com/watch?v=yG_Cjq1ei1Y)**
 
 This project showcases a lightweight melee test setup in Unreal Engine 5.5.4, focused on clean animation blending, upper-body attack layering, and simple breakable props. It’s a fast, practical sandbox to experiment with melee hits, weapon collision, and real-time destruction — without building a full combat system.
 
@@ -68,6 +69,7 @@ Animations blend smoothly, collisions feel responsive, and the destruction loop 
 ---
 
 # 🎭 Project 2 – Custom Headshake Animation (UE5)
+**[Medium Guide](https://medium.com/@fulton_shaun/ue5-custom-animation-tutorial-create-a-clean-headshake-from-scratch-b2cd110205ae)** • **[YouTube Tutorial](https://www.youtube.com/watch?v=GCiX0YH6G_k)**
 
 This project demonstrates how to create a fully custom animation inside Unreal Engine 5.5.4 using Control Rig, Sequencer, and Animation Blueprints. You’ll animate a clean headshake gesture, bake it into an Animation Sequence, and blend it into gameplay without disrupting locomotion.
 
@@ -117,6 +119,7 @@ It layers perfectly onto movement using upper-body blending, giving you expressi
 ---
 
 # 🌐 Project 3 – Level Switching with Open Level by Name (UE5)
+**[Medium Guide](https://medium.com/@fulton_shaun/open-level-by-name-first-person-third-person-476987a9b99c)** • **[YouTube Tutorial](https://www.youtube.com/watch?v=iZgNLGbeS0E)**
 
 This project demonstrates a clean, Blueprint-only level switching system using overlap triggers to instantly move between the Third Person and First Person template maps. Ideal for rapid prototyping or building multi-map hubs.
 
@@ -168,6 +171,7 @@ A clean two-way teleport system for tests, prototypes, or hub transitions.
 ---
 
 # ⚡ Project 4 – Skyrim-Inspired Sprint & Stamina System (UE5)
+**[Medium Guide](https://medium.com/@fulton_shaun/skyrim-inspired-sprint-system-in-ue5-armor-clanks-stamina-drain-tired-breathing-f6c7dbd9fd96)** • **[YouTube Tutorial](https://www.youtube.com/watch?v=xbdevJaUO9Q)**
 
 This project builds a **Skyrim-style sprint/stamina system** inside Unreal Engine 5.5.4. Sprinting drains stamina, plays armor-clank audio, boosts FOV, and triggers tired breathing when exhausted. Stamina regenerates when resting, and a UI bar visualizes the entire cycle.
 
