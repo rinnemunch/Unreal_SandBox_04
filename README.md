@@ -259,6 +259,7 @@ The UI bar tracks everything in real time — a clean, immersive Skyrim-inspired
 ---
 
 # ✨ Project 5 – Mesh Outline Highlight System (UE5)
+**[Medium Guide](https://medium.com/@fulton_shaun/how-to-add-an-outline-to-any-mesh-in-unreal-engine-5-b0e5a9e41cde?postPublishedType=repub)** • **[YouTube Tutorial](https://www.youtube.com/watch?v=oLqERDNen-o)**
 
 This project builds a flexible **mesh outline system** inside Unreal Engine 5.5.4 using unlit masked materials, world-position offset, and Blueprint-driven proximity triggers. It highlights objects when the player approaches, making it ideal for interactables, pickups, and environmental cues.
 
